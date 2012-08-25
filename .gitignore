@@ -1,10 +1,11 @@
 *.class
 *.classpath
 *.project
-~/.settings
+.settings
 *.java
 
 # Package Files #
+Bomb.java
 *.jar
 *.war
 *.ear
