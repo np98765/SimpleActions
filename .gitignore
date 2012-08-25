@@ -1,9 +1,8 @@
 *.class
 *.classpath
 *.project
-*.settings
+~/.settings
 *.java
-~/.java
 
 # Package Files #
 *.jar
