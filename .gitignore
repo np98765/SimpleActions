@@ -3,7 +3,7 @@
 *.project
 *.settings
 *.java
-/*.java
+/.java
 
 # Package Files #
 *.jar
