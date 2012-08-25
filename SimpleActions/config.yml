@@ -1,0 +1,13 @@
+#Default configuration
+prefix: '&a*'
+firelength: 5
+defaultXP: 17
+bomb:
+  snowball:
+    bomb-effect: real-explosion
+      confusion-duration: 10
+      blindness-duration: 10
+  egg:
+    bomb-effect: real-explosion
+      confusion-duration: 10
+      blindness-duration: 10

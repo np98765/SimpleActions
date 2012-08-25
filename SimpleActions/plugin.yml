@@ -1,0 +1,113 @@
+name: SimpleActions
+main: com.lavacraftserver.SimpleActions.SimpleActions
+version: 1.5
+author: np98765
+
+commands:
+    bomb:
+      description: Bomb.
+      usage: /<command>
+    ignite:
+      description: Lights a player on fire for x seconds.
+      usage: /<command> <player> [time]
+    poke:
+      description: Pokes a player.
+      usage: /<command> <player>
+    lol:
+      description: Laughs out loud.
+      usage: /<command> [player]
+    murder:
+      description: Kills a player
+      usage: /<command> <player>
+    hug:
+      description: Hugs a player.
+      usage: /<command> <player>
+    cry:
+      description: Cries.
+      usage: /<command>
+    soar:
+      description: Allows flight.
+      usage: /<command> <player>
+    fly:
+      description: Allows flight.
+      usage: /<command> <player>
+    stopsoar:
+      description: Disallows flight.
+      usage: /<command> <player>
+    gm:
+      description: Quickly change gamemodes.
+      usage: /<command> [player]
+    sgm:
+      description: Quickly change gamemodes.
+      usage: /<command> [player]
+    switchgamemode:
+      description: Quickly change gamemodes.
+      usage: /<command> [player]
+    slap:
+      description: Slaps a player.
+      usage: /<command> <player>
+    fakeop:
+      description: Falsely ops a player.
+      usage: /<command> <player>
+    fop:
+      description: Falsely ops a player.
+      usage: /fop <player>
+    fakedeop:
+      description: Falsely de-ops a player.
+      usage: /<command> <player>
+    fdeop:
+      description: Falsely de-ops a player.
+      usage: /<command> <player>
+    givexp:
+      description: Gives a player XP.
+      usage: /<command> <player> [amount]
+    zap:
+      description: Calls lightning from the heavens.
+      usage: /<command> [player]
+    heal:
+      description: Heals a player.
+      usage: /<command> [player]
+    pm:
+      description: Private messages a player.
+      usage: /<command> <player> <message>
+    sword:
+      description: Private messages a player.
+      usage: /<command> <type> [player]
+    fireball:
+      description: Launches a fireball.
+      usage: /<command>
+    explode:
+      description: Explodes a player.
+      usage: /<command> [player]
+      
+permissions:
+  SimpleActions.*:
+    description: Gives access to all commands
+    children:
+      SimpleActions.ignite: true
+      SimpleActions.poke: true
+      SimpleActions.lol: true
+      SimpleActions.murder: true
+      SimpleActions.hug: true
+      SimpleActions.cry: true
+      SimpleActions.soar: true
+      SimpleActions.gm: true
+      SimpleActions.fakeOp: true
+      SimpleActions.giveXP: true
+      SimpleActions.zap: true
+      SimpleActions.heal: true
+      SimpleActions.sword: true
+      SimpleActions.fireball: true
+      SimpleActions.slap: true
+      SimpleActions.pm: true
+      SimpleActions.explode: true
+      SimpleActions.fireball: true
+  SimpleActions.user:
+    description: Allows all non-harmful commands
+    children:
+      SimpleActions.poke: true
+      SimpleActions.lol: true
+      SimpleActions.hug: true
+      SimpleActions.cry: true
+      SimpleActions.slap: true
+      SimpleActions.pm: true
